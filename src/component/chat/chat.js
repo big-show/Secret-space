@@ -15,7 +15,7 @@ class Chat extends Component{
         this.state={
             text:'',
             msg:[],
-            showEmoji:false
+            showEmoji:false,
         }
     }
     componentDidMount()
@@ -25,6 +25,9 @@ class Chat extends Component{
             //console.log('不存在数据，加载数据');
         }
         this.props.getMsgList();
+        setTimeout(function () {
+            window.scrollTo(0,10000000);
+        }, 200);
         //console.log("component Did Mount");
         this.fixCarousel();
         //this.pageReload();
@@ -100,7 +103,7 @@ class Chat extends Component{
                         }}
                 >{users[userid].name}
                 </NavBar>
-                <QueueAnim delay={100}>
+                {/*<QueueAnim delay={100}>*/}
                 {chatMsg.map((item)=> {
                     //console.log(users);
                     //console.log("item        ",item);
@@ -117,12 +120,19 @@ class Chat extends Component{
                             <Item className='chat-me' extra={<img src={avatar} alt='头像'/>} >{item.content}</Item>
                         </List>)
                 })}
-                </QueueAnim>
+                {/*</QueueAnim>*/}
             <div className='stick-footer'>
                 <List>
                 <InputItem
                     type='text'
                     value={this.state.text}
+                    onFocus={()=>{
+                        console.log("FOCUS",document.getElementsByClassName('stick-footer'),document.body,document.documentElement.scrollHeight,document.body.scrollHeight);
+                        setTimeout(function () {
+                            window.scrollTo(0,100000000);
+                        },100)
+
+                    }}
                     onChange={(v)=>{
                         this.setState({
                             text:v

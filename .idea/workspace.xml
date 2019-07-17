@@ -8,25 +8,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/precache-manifest.b7a8eeee549b7b5f3bf05df314890673.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.f1adbed7af0b72362086e3dc7b02be8c.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/2.91711da7.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/2.91711da7.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.fe39a6f4.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.fe39a6f4.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.bc869145.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.bc869145.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.c2410594.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.c2410594.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/boss/boss.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/boss/boss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/genius/genius.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/genius/genius.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/msg/msg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/msg/msg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/user/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/dashboard/dashborad.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/dashboard/dashborad.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.873f9641.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.873f9641.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/chat/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/chat/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/chat.redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/chat.redux.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,39 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="favicon.ico" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/favicon.ico">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="Secret.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/Secret.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="authroute.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/authroute/authroute.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="25" column="47" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="avatarSelector.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/avatarSelector/avatarSelector.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-311">
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,8 +49,8 @@
       <file leaf-file-name="chat.redux.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/redux/chat.redux.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+            <state relative-caret-position="147">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -104,7 +58,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chat.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/component/chat/chat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="132" column="27" selection-start-line="132" selection-start-column="27" selection-end-line="132" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boss.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/boss/boss.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/container/login/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/user/user.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
@@ -147,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/container/login/css/index.css" />
         <option value="$PROJECT_DIR$/src/container/login/login.js" />
         <option value="$PROJECT_DIR$/src/container/register/register.js" />
@@ -162,8 +156,10 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server/model.js" />
-        <option value="$PROJECT_DIR$/src/redux/chat.redux.js" />
         <option value="$PROJECT_DIR$/src/component/user/user.js" />
+        <option value="$PROJECT_DIR$/src/redux/chat.redux.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/component/chat/chat.js" />
       </list>
     </option>
   </component>
@@ -242,6 +238,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
               <item name="boss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Secret-space" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Secret-space" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Secret-space" type="b2602c69:ProjectViewProjectNode" />
@@ -408,18 +411,18 @@
       <option name="presentableId" value="Default" />
       <updated>1563339392977</updated>
       <workItem from="1563339394624" duration="21000" />
-      <workItem from="1563339421232" duration="17045000" />
+      <workItem from="1563339421232" duration="22139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17066000" />
+    <option name="totallyTimeSpent" value="22160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17597471" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17597471" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -428,7 +431,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3291536" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3291536" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -461,9 +464,6 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/logo/logo.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -478,13 +478,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/logo/logo.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/login/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/container/register/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -609,15 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/boss/boss.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/usercard/usercard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -693,22 +677,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/chat.redux.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/user/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="46" column="81" selection-start-line="46" selection-start-column="81" selection-end-line="46" selection-end-column="81" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/login/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/chat.redux.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/boss/boss.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/chat/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="132" column="27" selection-start-line="132" selection-start-column="27" selection-end-line="132" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

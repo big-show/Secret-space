@@ -33,10 +33,7 @@
 {
     font-size:20px;
 }
-.stick-footer
-{
-    position: static;
-}
+
 .stick-footer .am-grid-icon{
     display: none;
 }
@@ -49,7 +46,7 @@
     /*cursor: pointer;*/
 }
 .stick-footer{
-    position: absolute;
+    position: fixed;
     bottom:0;
     width: 100%;
     z-index: 10;

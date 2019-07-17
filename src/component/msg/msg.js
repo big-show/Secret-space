@@ -11,7 +11,7 @@ class Msg extends Component{
     componentDidMount()
     {
 
-        console.log("Msg DidMount");
+        //console.log("Msg DidMount");
         this.props.getMsgList();
 
     }

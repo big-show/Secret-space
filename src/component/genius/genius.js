@@ -14,7 +14,7 @@ class Genius extends Component{
     {
         this.props.getInitUserList('boss');
         this.props.getMsgList();
-        console.log("Genius DidMount");
+        //console.log("Genius DidMount");
     }
     render()
     {

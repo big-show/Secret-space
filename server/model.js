@@ -3,10 +3,10 @@ let env = process.env.NODE_ENV||'development';
 let dbUrl ='';
 //console.log("env",env);
 //部署到线上
-dbUrl='mongodb://smallant:11111$@127.0.0.1:27017/test';
+dbUrl='mongodb://smallant:11111$@127.0.0.1:27017/SecretSpace';
 if(env === 'development')
 {
-    dbUrl='mongodb://localhost:27017/test';
+    dbUrl='mongodb://localhost:27017/SecretSpace';
 }
 //console.log(dbUrl);
 //alert(dbUrl);

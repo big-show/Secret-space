@@ -20,7 +20,7 @@ class Dashboard extends Component{
             this.props.recvMsg();
         }
         this.props.getMsgList();
-        console.log("DashBorad DidMount");
+        //console.log("DashBorad DidMount");
         //this.pageReload();
     }
     pageReload()

@@ -44,7 +44,7 @@ class User extends Component {
                         <Item multipleLine>
                             <Brief>年龄:{props.title}</Brief>
                             {props.money ? <Brief>兴趣爱好:{props.money}</Brief> : null}
-                            {props.desc.split('\n').map(v => <Brief key={v}>个人简介{v}</Brief>)}
+                            {props.desc.split('\n').map(v => <Brief key={v}>个人简介:{v}</Brief>)}
                         </Item>
                     </List>
                         <Button type='primary' onClick={this.logout}>退出登录</Button>

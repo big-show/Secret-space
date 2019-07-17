@@ -25,9 +25,7 @@ class Chat extends Component{
             //console.log('不存在数据，加载数据');
         }
         this.props.getMsgList();
-        setTimeout(function () {
-            window.scrollTo(0,10000000);
-        }, 200);
+        window.scrollTo(0,10000000);
         //console.log("component Did Mount");
         this.fixCarousel();
         //this.pageReload();
@@ -55,6 +53,9 @@ class Chat extends Component{
     handleButtonClick()
     {
         //console.log('点击一次');
+        setTimeout(function () {
+            window.scrollTo(0,100000000);
+        },200);
         const from=this.props.user._id;
         const to = this.props.match.params._id;
         const msg = this.state.text;
@@ -104,6 +105,7 @@ class Chat extends Component{
                 >{users[userid].name}
                 </NavBar>
                 {/*<QueueAnim delay={100}>*/}
+                <div className='chat-content'>
                 {chatMsg.map((item)=> {
                     //console.log(users);
                     //console.log("item        ",item);
@@ -120,6 +122,7 @@ class Chat extends Component{
                             <Item className='chat-me' extra={<img src={avatar} alt='头像'/>} >{item.content}</Item>
                         </List>)
                 })}
+                </div>
                 {/*</QueueAnim>*/}
             <div className='stick-footer'>
                 <List>
@@ -127,17 +130,17 @@ class Chat extends Component{
                     type='text'
                     value={this.state.text}
                     onFocus={()=>{
-                        console.log("FOCUS",document.getElementsByClassName('stick-footer'),document.body,document.documentElement.scrollHeight,document.body.scrollHeight);
+                        //console.log("FOCUS",document.getElementsByClassName('stick-footer'),document.body,document.documentElement.scrollHeight,document.body.scrollHeight);
                         setTimeout(function () {
                             window.scrollTo(0,100000000);
-                        },100)
+                        },50)
 
                     }}
                     onChange={(v)=>{
                         this.setState({
                             text:v
-                        })
-                    }}
+                        });
+                        }}
                     extra={
                         <div>
                             <span style={{marginRight:10,fontSize:20}}

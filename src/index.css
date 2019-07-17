@@ -33,6 +33,21 @@
 {
     font-size:20px;
 }
+#chat-page .am-navbar
+{
+    position: fixed;
+    top:0;
+    align-items: center;
+    height: 45px;
+    background-color: #108ee9;
+    color: #fff;
+    width:100%;
+    z-index: 10;
+}
+#chat-page .chat-content{
+    margin-top: 45px;
+    margin-bottom:44px;
+}
 
 .stick-footer .am-grid-icon{
     display: none;

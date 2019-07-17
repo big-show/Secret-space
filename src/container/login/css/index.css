@@ -1,0 +1,39 @@
+.background
+{
+    background-image: url(../../../img/timg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+.inputItem
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:70%;
+}
+.inputItem .am-list-item
+{
+    border-radius: 30px;
+}
+.login
+{
+    position:absolute;
+    bottom:5%;
+    left:50%;
+    transform: translate(-50%,0);
+    width:70%;
+}
+.login .am-button
+{
+    width:48%;
+    border-radius: 20px;
+    float: left;
+}
+.login .right
+{
+    float:right;
+}

@@ -1,0 +1,55 @@
+.background
+{
+    background-image: url(../../../img/timg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+.inputItem
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:70%;
+}
+#register
+{
+    position:absolute;
+    bottom:5%;
+    left:50%;
+    transform: translate(-50%,0);
+    width:70%;
+}
+.inputItem .am-list-item
+{
+    border-radius: 30px;
+}
+.radioItems
+{
+    width:100%;
+}
+.radioItems .left
+{
+    width:40%;
+    float:left;
+    /*background-color: rgb(73,203,95);*/
+    /*background-color: #108ee9;*/
+}
+
+.radioItems .right
+{
+
+    width:40%;
+    float: right;
+    /*background-color: rgb(73,203,95);*/
+    /*background-color: #108ee9;*/
+}
+.radioItems .am-list-item .am-list-line .am-list-content
+{
+    color:rgb(189,189,189);
+    /*color:white;*/
+}
+

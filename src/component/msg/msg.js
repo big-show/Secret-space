@@ -39,7 +39,7 @@ class Msg extends Component{
         });
         let setChatGroup = new Set(chatGroupValue);
         chatGroupValue = Array.from(setChatGroup);
-        //console.log("chatGroup------------",chatGroupValue);
+        console.log("为与该用户有关的对话进行分组:",chatGroupValue);
         const userid=this.props.user._id;
         //console.log("当前用户userid",userid);
         return (

@@ -26,11 +26,12 @@ Router.get('/getmsglist',function(req,res){
        userdoc.forEach((v)=>{
            users[v.id]={name:v.user,avatar:v.avatar}
        })
-       //console.log("所有用户",users);
+       console.log("所有用户",users);
     });
     Chat.find({"$or":[{from:user},{to:user}]},function (err,doc) {
         if(err)
             return res.josn({code:1,msg:'后端出错'});
+        console.log("该用户的所有对话:",doc)
         return res.json({code:0,msgs:doc,users:users})
     })
 });
@@ -104,6 +105,7 @@ Router.get('/info',(req,res)=>{
        }
        if(doc)
        {
+           console.log("登录用户信息:",doc);
            return res.json({code:0,data:doc});
        }
     })

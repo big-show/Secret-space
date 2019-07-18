@@ -32,7 +32,7 @@ class Dashboard extends Component{
     render()
     {
         const pageLocation = this.props.location;
-        //console.log(pageLocation);
+        console.log(this.props);
         const navList = [
             {
                 path:'/boss',

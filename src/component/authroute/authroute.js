@@ -13,7 +13,9 @@ class AuthRoute extends Component{
     componentDidMount()
     {
         const publicList = ['/login','/register'];
+        //console.log(this.props);
         const pathname = this.props.location.pathname;
+        console.log(pathname);
         if(publicList.indexOf(pathname)!==-1)
         {
             return null;

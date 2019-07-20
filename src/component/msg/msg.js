@@ -10,10 +10,16 @@ import {getMsgList} from "../../redux/chat.redux";
 class Msg extends Component{
     componentDidMount()
     {
+        console.log("完成加载到msg页面")
 
         //console.log("Msg DidMount");
         this.props.getMsgList();
 
+
+    }
+    componentWillMount()
+    {
+        console.log("即将加载到msg页面")
     }
     getListItem(arr)
     {

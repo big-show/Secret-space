@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
-import {List,InputItem,NavBar,Icon,Grid,Button} from 'antd-mobile';
+import {List,InputItem,NavBar,Icon,Grid} from 'antd-mobile';
 import { connect } from 'react-redux'
-import QueueAnim from 'rc-queue-anim';
 import {getMsgList,sendMsg,recvMsg,upDateUnread} from '../../redux/chat.redux';
 import {getChatId} from '../../util';
 @connect(
@@ -18,12 +17,17 @@ class Chat extends Component{
             showEmoji:false,
         }
     }
+    componentWillMount()
+    {
+        console.log("即将完成chat加载组件");
+    }
     componentDidMount()
     {
         if(!this.props.chat.chatmsg.length) {
             this.props.recvMsg();
             //console.log('不存在数据，加载数据');
         }
+        console.log("完成加载chat组件");
         this.props.getMsgList();
         window.scrollTo(0,10000000);
         //console.log("component Did Mount");
@@ -72,6 +76,7 @@ class Chat extends Component{
 
         const userid =this.props.match.params._id;
         const users = this.props.chat.users;
+        //检测对付是否是已经存在的用户，应该是已经存在的，数据实时更新就，出现在列表就会getMsgList
         if(!users[userid])
             return null;
         const Item =List.Item;
@@ -89,7 +94,7 @@ class Chat extends Component{
         //const itemIdContainer =new Map();
         const setChatMsg = new Set(chatMsg);
         chatMsg = Array.from(setChatMsg);
-        //console.log(" After remove duplicative chatMsg ------",chatMsg);
+        console.log(" 与chat有关的对话信息(该用户和chatTo用户)------",chatMsg);
         //let length =chatMsg.length;
         //console.log(chatMsg.length);
         //console.log(chatMsg);
@@ -110,7 +115,7 @@ class Chat extends Component{
                     //console.log(users);
                     //console.log("item        ",item);
                     //console.log(item.from);
-                    const userAvatar=item.from?users[item.from].avatar:this.props.user.avatar;
+                    const userAvatar=users[item.from].avatar;
                     const avatar=require(`../../img/${userAvatar}.png`);
                     //console.log(item);
                     return item.from === userid?

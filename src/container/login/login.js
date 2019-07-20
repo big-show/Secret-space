@@ -3,9 +3,8 @@ import { login } from '../../redux/user.redux';
 import { connect } from 'react-redux';
 import './css/index.css'
 //import Logo from '../../component/logo/logo';
-import backGround from '../../img/timg.jpg';
 import { Redirect } from 'react-router-dom';
-import {List,InputItem,WingBlank,WhiteSpace,Button} from 'antd-mobile';
+import {InputItem,WingBlank,WhiteSpace,Button} from 'antd-mobile';
 @connect(
     state=>state.user,
     {login}

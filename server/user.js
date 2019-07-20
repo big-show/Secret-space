@@ -4,7 +4,7 @@ const Router = express.Router();
 const model = require('./model');
 const User = model.getModel('user');
 const Chat = model.getModel('chat');
-const _filter={pwd:0,__v:0};
+const _filter={pwd:0};
 Router.get('/list',(req,res)=>{
   // User.remove({},(e,d)=>{});
    // Chat.remove({},(e,d)=>{});
@@ -31,17 +31,22 @@ Router.get('/getmsglist',function(req,res){
     Chat.find({"$or":[{from:user},{to:user}]},function (err,doc) {
         if(err)
             return res.josn({code:1,msg:'后端出错'});
-        console.log("该用户的所有对话:",doc)
+        console.log("该用户的所有对话:",doc);
         return res.json({code:0,msgs:doc,users:users})
     })
 });
 //更新未读消息列表
 Router.post('/updateUnread',function(req,res){
+    //通过GetState传过来的Userid和cookies.userid是一致的
    //const cookieUserid = req.cookies.userid;
    const userid = req.body.userid;
    const from = req.body.from;
-   //console.log("cookies",req.cookies);
-   //console.log("From who",from);
+   // console.log("cookies",req.cookies);
+   // console.log("cookies userid",cookieUserid);
+   // console.log("通过getState获取到的userid",userid);
+
+
+    //console.log("From who",from);
    //console.log(req.body);
    Chat.update({from,to:userid},{$set: {read:"true"}}, {multi: true},(err,doc)=>{
        //console.log(doc.nModified);

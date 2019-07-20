@@ -1,5 +1,5 @@
 import React ,{ Component }  from 'react';
-import {WhiteSpace,Card,List } from 'antd-mobile';
+import {WhiteSpace,Card } from 'antd-mobile';
 import { withRouter } from 'react-router-dom';
 @withRouter
 class UserCard extends Component{

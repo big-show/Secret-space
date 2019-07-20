@@ -72,7 +72,7 @@ export function recvMsg()
     //console.log("接受数据");
     return (dispatch,getState)=> {
         socket.on('recvmsg', function (data) {
-            //console.log("recvmsg返回的数据----",data);
+            console.log("recvmsg返回的数据----",data);
             const userid=getState().user._id;
             dispatch(getRecvMsg(data,userid));
         })
@@ -97,7 +97,7 @@ export function sendMsg({from,to,msg}) {
     }
 }
 export function getMsgList() {
-    //console.log("更新数据列表");
+    console.log("已加载页面通过getMsgList初始化数据列表");
     return (dispatch,getState)=>{
 
         axios.get('/user/getmsglist')
@@ -106,8 +106,14 @@ export function getMsgList() {
                 //console.log("state",getState());
                 const userid=getState().user._id;
                 //console.log("用户发起者",userid);
-                if (res.status === 200 && res.data.code === 0)
-                    dispatch(msgList(res.data.msgs,res.data.users,userid))
+                if (res.status === 200 && res.data.code === 0) {
+                    console.log("初始化数据列表成功返回数据:", res.data.msgs, res.data.users, userid);
+                    dispatch(msgList(res.data.msgs, res.data.users, userid))
+                }
+                else
+                {
+                    console.log("初始化列表失败未能返回与用户有关的数据");
+                }
             })
     }
 }

@@ -14,9 +14,16 @@ import {getMsgList,recvMsg} from '../../redux/chat.redux';
     {getMsgList,recvMsg}
 )
 class Dashboard extends Component{
+    componentWillMount()
+    {
+        console.log("即将加载到DashBorad引导板页面")
+
+    }
     componentDidMount()
     {
+        console.log("完成加载到DashBorad引导板页面")
         if(!this.props.chat.chatmsg.length) {
+            console.log("聊天对话长度为0，加载recvMsg获取聊天监听函数")
             this.props.recvMsg();
         }
         this.props.getMsgList();

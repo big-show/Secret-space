@@ -16,8 +16,8 @@ io.on('connection',function (socket) {
         ///io.emit('recvmsg',data)
         const {from,to,msg}=data;
         const chatid =[from,to].sort().join('_');
-        Chat.create({chatid,from,to,content:msg},function(err,doc){
-            //console.log(""doc._doc);
+        Chat.create({chatid,from,to,content:msg,read:false},function(err,doc){
+            console.log("新建的发送的对话信息",doc._doc);
             io.emit('recvmsg',Object.assign({},doc._doc));
         });
     })

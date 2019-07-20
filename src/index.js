@@ -22,6 +22,7 @@ ReactDom.render(
         <Provider store={store}>
             <BrowserRouter>
                 <div>
+                    {console.log("先加载权限验证页面，再加载后面的页面")}
                     <AuthRoute></AuthRoute>
                     <Switch>
                     <Route path='/geniusinfo' component={Geniusinfo}/>
@@ -29,6 +30,7 @@ ReactDom.render(
                     <Route path='/login' component={Login} />
                     <Route path='/register' component={Register} />
                         <Route path='/chat/:_id' component={Chat}/>
+                        {console.log("其他页面route都不符合，加载dashBorad页面")}
                         <DashBoard></DashBoard>
                     </Switch>
                 </div>
